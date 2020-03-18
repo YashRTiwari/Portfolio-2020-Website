@@ -2,7 +2,7 @@
     body {
     }
 
-    .about_me, .portfolio, .blog, .contact{
+    .about_me, .portfolio, .blog_container, .contact{
         min-height: 100vh;
         display: flex;
         margin-left: 10%;
@@ -39,5 +39,9 @@
         font-size: 60px;
         font-weight: 400;
 
+    }
+
+    .contact{
+        display: none;
     }
   }
