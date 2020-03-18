@@ -3,7 +3,7 @@
     }
 
     .about_me, .portfolio, .blog, .contact{
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         margin-left: 10%;
         margin-right: 10%;
