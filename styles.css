@@ -1,0 +1,198 @@
+:root {
+    --color-orange : #F49217;
+    --color-gray : #838282;
+    --nav-bar-size : 64px;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+
+} 
+
+ .about_me, .portfolio, .blog, .contact{
+    height: calc(100vh - var(--nav-bar-size));
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+/* Nav Container */
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-orange);
+    height: var(--nav-bar-size);
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    z-index: 100;
+}
+
+/* Nav Item Contianer */
+.nav_item{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Nav Item */
+.n_item{
+    display: flex;
+    width: 120px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav_active{
+    background-color: white;
+    color: var(--color-orange);
+    border-radius: 30px;
+}
+
+
+
+/* Name and Logo */
+#logo_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    margin-left: 10px;
+    font-size: 32px;
+}
+
+/* About Container */
+.about_me{
+    margin-top: var(--nav-bar-size);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#about_yash_image{
+    display: flex;
+    padding-left: 10%;
+    width: 320px;
+    height: 425px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%;
+}
+
+#yash_tiwari{
+    color: var(--color-orange);
+    margin-top: 0px;
+    padding-top: 0px!important;
+    font-size: 88px;
+    font-weight: bold;
+}
+
+#tiwari{
+    color: var(--color-orange);
+    margin-top: 0px;
+    padding-top: 0px!important;
+    font-size: 88px;
+    font-weight: bold;
+}
+
+#namaste{
+    color: var(--color-gray);
+    font-weight: 400;
+    position: relative;
+    top: 20px;
+    font-size: 18px;
+}
+
+#desc_web_mobile{
+    color: var(--color-gray);
+    font-weight: 500;
+    position: relative;
+    font-size: 18px;
+}
+
+.connect{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.connect_img{
+    width: 28px;
+    height: 28px;
+    margin: 15px;
+}
+
+.resume_hire_btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn_b_white{
+    border-style: ridge;
+    border-color: var(--color-orange);
+    border-width: 1px;
+    width: 100px;
+    height: 36px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_orange{
+    width: 100px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: var(--color-orange);
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#btn_hire_me{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Portfolio Container */
+.portfolio {
+    background-color: black;
+}
+
+/* Blog container */
+.blog{
+    background-color: pink;
+}
+
+/* Contact Container */
+.contact{
+    background-color: green;
+}

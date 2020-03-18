@@ -1,0 +1,43 @@
+@media screen and (max-width: 600px) {
+    body {
+    }
+
+    .about_me, .portfolio, .blog, .contact{
+        height: 100vh;
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .about_me{
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+    
+    }
+
+    #about_yash_image{
+        display: none;
+    }
+
+    #yash_tiwari{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tiwari{
+        position: relative;
+        top: -40px;
+        color:black;
+        margin-top: 0px;
+        padding-top: 0px!important;
+        font-size: 60px;
+        font-weight: 400;
+
+    }
+  }
