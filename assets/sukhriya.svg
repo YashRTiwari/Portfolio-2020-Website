@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="259" height="85" viewBox="0 0 259 85">
+  <g id="Group_13" data-name="Group 13" transform="translate(-1456 -882)">
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="259" height="71" rx="35.5" transform="translate(1456 882)" fill="#f49217"/>
+    <text id="Sukhriya_" data-name="Sukhriya!" transform="translate(1520 928)" fill="#fff" font-size="29" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Sukhriya!</tspan></text>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(1656 967) rotate(180)" fill="#f49217">
+      <path d="M 19.20810890197754 20.5 L 0.7918919324874878 20.5 L 10 1.162973046302795 L 19.20810890197754 20.5 Z" stroke="none"/>
+      <path d="M 10 2.325935363769531 L 1.583778381347656 20 L 18.41622161865234 20 L 10 2.325935363769531 M 10 0 L 20 21 L 0 21 L 10 0 Z" stroke="none" fill="#f49217"/>
+    </g>
+  </g>
+</svg>

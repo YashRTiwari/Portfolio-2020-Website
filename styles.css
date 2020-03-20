@@ -11,36 +11,50 @@ html, body{
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .container{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-width: calc(100vw - 10%);
+    max-width: 1920px;
+    margin-left: 5%;
+    margin-right: 5%;
 } 
 
- .about_me, .portfolio, .blog_container, .contact{
-    min-height: calc(100vh - var(--nav-bar-size));
+.section{
+    height: 90%;
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 4%;
 }
 
 /* Nav Container */
 .nav{
+
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
     background-color: var(--color-orange);
     height: var(--nav-bar-size);
-    padding-left: 10%;
-    padding-right: 10%;
+    min-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     color: white;
     z-index: 100;
+
 }
 
 /* Nav Item Contianer */
@@ -86,11 +100,11 @@ html, body{
 
 /* About Container */
 .about_me{
-    margin-top: var(--nav-bar-size);
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    height: calc(100vh);
+    max-height: 1080px;
 }
 
 #about_yash_image{
@@ -323,4 +337,41 @@ html, body{
 .contact{
     background-color: green;
     display: flex;
+    flex-direction: column;
+}
+
+.contact_left_right{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact_left{
+    width: 50%;
+}
+
+.contact_right{
+    width: 50%;
+
+}
+
+.first_last_name{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact_header{
+    font-size: 24px;
+}
+
+/* --------------------------------------------------------------------- */
+/* Footer Container */
+.footer{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-orange);
+    height: var(--nav-bar-size);
 }
