@@ -13,7 +13,6 @@ html, body{
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
 }
 
@@ -44,15 +43,15 @@ html, body{
     top: 0px;
     left: 0px;
     right: 0px;
-
     background-color: var(--color-orange);
     height: var(--nav-bar-size);
-    min-width: 100%;
+    min-width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     color: white;
+    padding: 0px 5%;
     z-index: 100;
 
 }
@@ -367,11 +366,8 @@ html, body{
 /* --------------------------------------------------------------------- */
 /* Footer Container */
 .footer{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-flex;
     background-color: var(--color-orange);
     height: var(--nav-bar-size);
+    width: 100%;
 }
