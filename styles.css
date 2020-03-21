@@ -334,7 +334,6 @@ html, body{
 /* --------------------------------------------------------------------- */
 /* Contact Container */
 .contact{
-    background-color: green;
     display: flex;
     flex-direction: column;
 }
@@ -370,4 +369,19 @@ html, body{
     background-color: var(--color-orange);
     height: var(--nav-bar-size);
     width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#sukhriya{
+    width: 90%;
+    display: flex;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: flex-end;
 }
