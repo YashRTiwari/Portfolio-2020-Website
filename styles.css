@@ -104,11 +104,13 @@ html, body{
     align-items: center;
     height: calc(100vh);
     max-height: 1080px;
+    width: 100%;
+    max-width: 1920px;
+    justify-content: space-evenly;
 }
 
 #about_yash_image{
     display: flex;
-    padding-left: 10%;
     width: 320px;
     height: 425px;
 }
@@ -116,8 +118,6 @@ html, body{
 .about{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-left: 10%;
 }
 
 #yash_tiwari{
@@ -210,6 +210,7 @@ html, body{
     font-size: 74px;
     color: black;
     margin-top: 50px;
+    text-align: center;
 }
 
 .section_qoute{
@@ -218,6 +219,7 @@ html, body{
     font-weight: 400;
     font-style: italic;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 /* Row containing portfolio project and blog content */
@@ -227,7 +229,12 @@ html, body{
     flex-wrap: wrap;
 }
 
-.portfolio > .row_components {
+.col_component{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
     justify-content: center;
     align-items: center;
 }
@@ -235,7 +242,7 @@ html, body{
 /* Project In portfolio  */
 .port_proj {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* box-shadow: 0px 3px 3px 0.5px var(--color-shadow); */
     border-radius: 10px;
     min-width: 300px;
@@ -243,7 +250,7 @@ html, body{
     padding-left: 10px;
     padding-right: 10px;
     margin: 20px;
-    
+    justify-content: space-evenly;
 }
 
 /* Container containing name and type of project */
@@ -253,21 +260,35 @@ html, body{
 }
 
 /* Image of project */
-/* .port_img{
-    width: 100px;
-    height: 100px;
-} */
+ .margin_right_50{
+    margin-right: 50px;
+}
+.margin_left_50{
+    margin-left: 50px;
+}
+
+.port_img{
+    height: 250px;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.end{
+    justify-content: flex-end;
+}
 
 /* Project Name */
 .port_name{
     color: black;
     font-weight: 500;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 28px;
 }
 
-.port_type{
-    text-align: center;
+.port_info{
+    max-width: 75%;
 }
 
 .view_more{
@@ -291,7 +312,7 @@ html, body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: space-evenly;
 }
 
 .blog{
