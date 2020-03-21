@@ -2,10 +2,51 @@
     /* --color-orange : #F49217; */
     --color-orange :#E75C00;
     --color-gray : #838282;
+    --color_dark-gray : #444343;
     --nav-bar-size : 64px;
     --color-shadow : #CCCCCC;
     --color-component-bg : #FFF2E1;
 }
+
+/* -----------------------------GENERIC---------------------------------------- */
+
+.flex{
+    display: flex;
+}
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.start{
+    justify-content: flex-start;
+}
+.end{
+    justify-content: flex-end;
+}
+
+.space_even{
+    justify-content: space-evenly;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -----------------------------END - GENERIC---------------------------------------- */
+
 
 html, body{
     margin: 0px;
@@ -234,10 +275,7 @@ html, body{
     flex-direction: column;
 }
 
-.center{
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* Project In portfolio  */
 .port_proj {
@@ -247,10 +285,6 @@ html, body{
     border-radius: 10px;
     min-width: 300px;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 20px;
-    justify-content: space-evenly;
 }
 
 /* Container containing name and type of project */
@@ -308,49 +342,81 @@ html, body{
 
 }
 
+.b{
+    margin-bottom: 20px;
+}
+
 .blog_list{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.blog{
-
-    width: 300px;
-    border-color: var(--color-gray);
-    border-width: 1px;
-    border-style: ridge;
-    border-radius: 10px;
-    padding: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-
-}
-
-.blog_name{
-    font-size: 18px;
-    color: black;
-    font-weight: 600;
-}
-
-.blog_content{
-    font-size: 16sp;
-    font-weight: 500;
-    color: var(--color-gray);
-}
-
-.blog_dt{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
 .blog_date{
-    font-size: 12sp;
-    color: gray;
-    font-weight: 300;
+    margin-right: 30px;
 }
+
+.b_d_day{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.b_d_month{
+    font-size: 18px;
+}
+
+.b_detail{
+    max-width: 75%;
+}
+
+.b_header{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.b_summary{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color_dark-gray);
+}
+
+
+
+/*.blog{*/
+
+/*    width: 300px;*/
+/*    border-color: var(--color-gray);*/
+/*    border-width: 1px;*/
+/*    border-style: ridge;*/
+/*    border-radius: 10px;*/
+/*    padding: 20px;*/
+/*    margin-right: 20px;*/
+/*    margin-top: 20px;*/
+
+/*}*/
+
+/*.blog_name{*/
+/*    font-size: 18px;*/
+/*    color: black;*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*.blog_content{*/
+/*    font-size: 16sp;*/
+/*    font-weight: 500;*/
+/*    color: var(--color-gray);*/
+/*}*/
+
+/*.blog_dt{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.blog_date{*/
+/*    font-size: 12sp;*/
+/*    color: gray;*/
+/*    font-weight: 300;*/
+/*}*/
 
 /* --------------------------------------------------------------------- */
 /* Contact Container */
