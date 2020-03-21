@@ -8,44 +8,6 @@
     --color-component-bg : #FFF2E1;
 }
 
-/* -----------------------------GENERIC---------------------------------------- */
-
-.flex{
-    display: flex;
-}
-
-.flex_col{
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
-
-.start{
-    justify-content: flex-start;
-}
-.end{
-    justify-content: flex-end;
-}
-
-.space_even{
-    justify-content: space-evenly;
-}
-
-.space_between{
-    justify-content: space-between;
-}
-
-.center{
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* -----------------------------END - GENERIC---------------------------------------- */
 
 
 html, body{
@@ -62,11 +24,11 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    min-width: calc(100vw - 10%);
+    width: 80%;
+    min-width: calc(100vw - 20%);
     max-width: 1920px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 } 
 
 .section{
@@ -143,7 +105,7 @@ html, body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: calc(100vh);
+    height: calc(100vh + var(--nav-bar-size));
     max-height: 1080px;
     width: 100%;
     max-width: 1920px;
@@ -251,7 +213,6 @@ html, body{
     font-size: 74px;
     color: black;
     margin-top: 50px;
-    text-align: center;
 }
 
 .section_qoute{
@@ -260,7 +221,6 @@ html, body{
     font-weight: 400;
     font-style: italic;
     margin-bottom: 50px;
-    text-align: center;
 }
 
 /* Row containing portfolio project and blog content */
@@ -285,6 +245,7 @@ html, body{
     border-radius: 10px;
     min-width: 300px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 /* Container containing name and type of project */
@@ -293,16 +254,16 @@ html, body{
     flex-direction: column;
 }
 
+.port_img_holder{
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
 /* Image of project */
- .margin_right_50{
-    margin-right: 50px;
-}
-.margin_left_50{
-    margin-left: 50px;
-}
-
 .port_img{
-    height: 250px;
+    height: 150px;
 }
 
 .start{
@@ -321,9 +282,7 @@ html, body{
     font-size: 28px;
 }
 
-.port_info{
-    max-width: 75%;
-}
+
 
 .view_more{
     margin: 20px;
@@ -364,9 +323,7 @@ html, body{
     font-size: 18px;
 }
 
-.b_detail{
-    max-width: 75%;
-}
+
 
 .b_header{
     font-size: 26px;
@@ -472,3 +429,46 @@ html, body{
     align-items: center;
     justify-content: flex-end;
 }
+
+/* -----------------------------GENERIC---------------------------------------- */
+
+.flex{
+    display: flex;
+}
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.start{
+    justify-content: flex-start;
+}
+.end{
+    justify-content: flex-end;
+}
+
+.space_even{
+    justify-content: space-evenly;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.row_reverse{
+    flex-direction: row-reverse;
+}
+
+
+/* -----------------------------END - GENERIC---------------------------------------- */
