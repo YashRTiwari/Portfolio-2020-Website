@@ -28,10 +28,10 @@
         
         <div class="nav_item">
 
-            <div class="n_item nav_active">About Me</div>
-            <div class="n_item">Portfolio</div>
-            <div class="n_item">Blog</div>
-            <div class="n_item">Contact</div>
+            <a class="n_item nav_active" href="#abt">About Me</a>
+            <a class="n_item" href="#prt">Portfolio</a>
+            <a class="n_item" href="#blg">Blog</a>
+            <a class="n_item" href="#cnt">Contact</a>
 
         </div>
 
@@ -40,7 +40,7 @@
 
         
         
-        <div class="about_me">
+        <div class="about_me" id="abt">
 
             <img id="about_yash_image" src="./assets/yash_new.png" alt="Yash Rajendra Tiwari">
 
@@ -69,7 +69,7 @@
         </div>
 
 
-        <div class="portfolio section">
+        <div class="portfolio section" id="prt">
             
             <div class="section_header">Portfolio</div>
             <div class="section_qoute">“You are only entitled to the action, never to its fruits."</div>
@@ -91,7 +91,6 @@
 
 
                 <div class="port_proj " id="p1">
-                    <div class="port_img_holder"><img class="port_img " src="assets/projects/app2.svg" alt=""></div>
 
 
                     <div class="port_info">
@@ -100,6 +99,7 @@
                     </div>
 
 
+                    <div class="port_img_holder"><img class="port_img " src="assets/projects/app2.svg" alt=""></div>
 
 
                 </div>
@@ -118,13 +118,13 @@
                 </div>
 
                 <div class="port_proj " id="p1">
-                    <div class="port_img_holder"><img class="port_img " src="assets/projects/web2.svg" alt=""></div>
 
 
                     <div class="port_info">
                         <div class="port_name">Disco</div>
                         <div class="port_type">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</div>
                     </div>
+                    <div class="port_img_holder"><img class="port_img " src="assets/projects/web2.svg" alt=""></div>
 
 
                 </div>
@@ -134,7 +134,7 @@
         </div>
 
 
-        <div class="blog_container section">
+        <div class="blog_container section" id="blg">
 
             <div class="section_header">Blog</div>
             <div class="section_qoute"> “My Lord, increase me in  knowledge”</div>
@@ -168,38 +168,10 @@
                     </div>
                 </div>
 
-<!--                <div class="blog">-->
-
-<!--                    <div class="blog_name">Android P</div>-->
-<!--                    <div class="blog_dt">-->
-
-<!--                        <div class="blog_date">Date</div>-->
-<!--                        &lt;!&ndash; <div class="blog_time">Time</div> &ndash;&gt;-->
-
-<!--                    </div>-->
-
-<!--                    <div class="blog_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut….</div>-->
-
-<!--                </div>-->
-
-<!--                <div class="blog">-->
-
-<!--                    <div class="blog_name">Android P</div>-->
-<!--                    <div class="blog_dt">-->
-
-<!--                        <div class="blog_date">Date</div>-->
-<!--                        &lt;!&ndash; <div class="blog_time">Time</div> &ndash;&gt;-->
-
-<!--                    </div>-->
-
-<!--                    <div class="blog_content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut….</div>-->
-
-<!--                </div>-->
-
             </div>
 
         </div>
-        <div class="contact section">
+        <div class="contact section" id="cnt">
 
                 <div class="section_header">Contact</div>
                 <div class="section_qoute"> "Its a never ending saga"</div>
@@ -232,7 +204,33 @@
         <div> by <span>Yash.<span  class="bold"></div>
     
     </div>
-    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script >
+
+
+        var navItems = document.getElementsByClassName("n_item");
+
+        $('.nav_item').find('a').click(function(){
+
+            for (var i =0; i<navItems.length; i++){
+                if (navItems[i].classList.contains("nav_active")){
+                    navItems[i].classList.remove("nav_active");
+                }
+            }
+
+            var $href = $(this).attr('href');
+            var $anchor = $($href).offset();
+            window.scrollTo($anchor.left,$anchor.top);
+
+            $(this)[0].classList.add("nav_active");
+            return false;
+        });
+
+
+
+    </script>
     
 </body>
 

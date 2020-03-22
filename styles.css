@@ -16,6 +16,7 @@ html, body{
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 
 }
 
@@ -77,6 +78,7 @@ html, body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: white;
 }
 
 .nav_active{
@@ -246,12 +248,14 @@ html, body{
     min-width: 300px;
     align-items: center;
     margin-bottom: 20px;
+    justify-content: space-evenly;
 }
 
 /* Container containing name and type of project */
 .port_info{
     display: flex;
     flex-direction: column;
+    width: 75%;
 }
 
 .port_img_holder{
@@ -263,7 +267,7 @@ html, body{
 }
 /* Image of project */
 .port_img{
-    height: 150px;
+    height: 250px;
 }
 
 .start{
@@ -468,6 +472,11 @@ html, body{
 
 .row_reverse{
     flex-direction: row-reverse;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 
 
