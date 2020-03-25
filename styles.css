@@ -163,7 +163,6 @@ html, body{
 }
 
 .connect_img{
-    width: 28px;
     height: 28px;
     margin: 15px;
 }
@@ -238,7 +237,6 @@ html, body{
 }
 
 
-
 /* Project In portfolio  */
 .port_proj {
     display: flex;
@@ -249,6 +247,30 @@ html, body{
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-evenly;
+    
+}
+
+.port_proj_odd {
+    display: flex;
+    flex-direction: row;
+    /* box-shadow: 0px 3px 3px 0.5px var(--color-shadow); */
+    border-radius: 10px;
+    min-width: 300px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.port_proj_even {
+    display: flex;
+    flex-direction: row-reverse;
+    /* box-shadow: 0px 3px 3px 0.5px var(--color-shadow); */
+    border-radius: 10px;
+    min-width: 300px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    
 }
 
 /* Container containing name and type of project */
@@ -269,6 +291,18 @@ html, body{
 .port_img{
     height: 250px;
 }
+.port_code{
+    display: flex;
+    margin: 10px 10px;
+}
+.code_img{
+    height: 20px;
+    margin-right: 8px;
+}
+
+.code_img:hover{
+    height: 22px;
+}
 
 .start{
     justify-content: flex-start;
@@ -280,10 +314,12 @@ html, body{
 
 /* Project Name */
 .port_name{
+    display: flex;
     color: black;
     font-weight: 500;
     margin-top: 10px;
     font-size: 28px;
+    align-items: center;
 }
 
 
@@ -332,6 +368,11 @@ html, body{
 .b_header{
     font-size: 26px;
     font-weight: 500;
+}
+
+.b_date{
+    color: var(--color_dark-gray);
+    font-size: 12px;
 }
 
 .b_summary{
